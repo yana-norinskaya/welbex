@@ -1,0 +1,18 @@
+:root {
+  --container-size: 46px 150px;
+  --color-red: #961a1a;
+  --color-text: #e4e5ea;
+  --color-blue: #4077f3;
+  --color-grey: #656566;
+
+  --color-bg: #0e1014;
+  --size-xs: 10px;
+  --font-sm: 16px;
+  --font-md: 18px;
+  --font-lg: 22px;
+  --font-xl: 48px;
+  --family-Inter: "Inter", sans-serif;
+  --family-Montserrat: "Montserrat", sans-serif;
+  --animate: 300ms all ease;
+  --mobile-padding: 40px 37px 40px 14px;
+}

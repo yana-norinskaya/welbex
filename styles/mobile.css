@@ -1,0 +1,188 @@
+@import url(variable.css);
+@media screen and (max-width: 480px) {
+  .bg-blur {
+    display: none;
+  }
+  .bg-ball-purple {
+    display: none;
+  }
+  .bg-ball-red {
+    display: none;
+  }
+  .bg-ball-small {
+    display: none;
+  }
+  .bg-blur-red {
+    display: none;
+  }
+  .header {
+    padding: 20px;
+    width: 100%;
+  }
+  .header-logo {
+    display: none;
+  }
+  .header_logo {
+    display: none;
+  }
+  .header-nav {
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    line-height: 15px;
+    justify-content: space-between;
+    color: var(--color-text);
+    text-transform: uppercase;
+  }
+  .header-nav > li:last-child {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .consultation {
+    padding: var(--mobile-padding);
+    width: 100%;
+    background: url(../assets/bg.png) no-repeat 100% 100% / cover;
+    color: var(--color-text);
+    position: relative;
+  }
+  .bg-mobile-blur {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      238.53% 189.02% at 3.2% 3.49%,
+      rgba(255, 246, 233, 0.1) 0%,
+      rgba(26, 29, 35, 0.1) 26.62%,
+      rgba(26, 29, 35, 0.1) 52.1%,
+      rgba(26, 29, 35, 0.01) 70.17%,
+      rgba(26, 29, 35, 0) 100%
+    );
+    backdrop-filter: blur(7.5px);
+  }
+  .consultation-left > h1 {
+    font-weight: 400;
+    font-size: 36px;
+  }
+  .consultation-left > h2 {
+    background: linear-gradient(92deg, #fcb045 16.14%, #ff3f78 70.36%), #e4e5ea;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .consultation-left > p {
+    font-size: var(--font-md);
+    width: 275px;
+    padding-top: 30px;
+  }
+  .consultation-right-title {
+    padding-top: 30px;
+  }
+  .consultation-right-title > span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .consultation-right-title > span:first-child {
+    background: linear-gradient(100deg, #fcb045 0.14%, #fd1d1d 50.36%), #e4e5ea;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .consultation-right-title > span:last-child {
+    background: linear-gradient(92deg, #fcb045 50.14%, #fd1d1d 125.36%), #e4e5ea;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .consultation-grid {
+    display: none;
+  }
+  .consultation-btn {
+    display: none;
+  }
+  .consultation-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 10px;
+    column-gap: 40px;
+    width: fit-content;
+    margin-top: 15px;
+    padding-left: 15px;
+  }
+  .consultation-mobile > p {
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .consultation-mobile > p::before {
+    content: "";
+    width: 10px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    background: linear-gradient(92deg, #fcb045 50.14%, #fd1d1d 125.36%), #e4e5ea;
+  }
+  .footer-grid {
+    padding: var(--mobile-padding);
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+
+  .footer-title1,
+  .footer-column1,
+  .footer-title2,
+  .footer-title3,
+  .footer-column4,
+  .footer-copyright {
+    grid-column: 1 / 3;
+  }
+  .footer-column3 {
+    display: none;
+  }
+
+  .footer-grid > p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-grey);
+  }
+
+  .footer-grid > ul > li {
+    padding-bottom: var(--size-xs);
+  }
+
+  .footer-grid > ul > li > a {
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .footer-column4,
+  a {
+    color: var(--color-text);
+  }
+  .footer-column4-links {
+    display: flex;
+    gap: var(--size-xs);
+    padding: 10px 0;
+  }
+  .footer-copyright {
+    color: var(--color-text);
+    font-size: 12px;
+  }
+  .footer-copyright > a {
+    text-decoration: underline;
+  }
+}
